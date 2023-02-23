@@ -18,7 +18,11 @@ LocalDate currentDate = LocalDate.now();
 <p><i>Today is <%= currentDate.getDayOfWeek() %> </i></p>
 
 <h2>Welcome to the tennis player database!</h2>
-<h3>Player name: <i>${name}</i> </h3>
+
+<form action="/player.do" method="POST">
+<b>Player name: <input type="text" name="name"/></b>
+                <input type="submit" value="Enter"/>
+</form>
 
 </body>
 </html>
